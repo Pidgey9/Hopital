@@ -10,6 +10,12 @@ namespace Test
     {
         static void Main(string[] args)
         {
+            Test();
+            Console.ReadLine();
+        }
+        static void Test()
+        {
+            Console.WriteLine(Authentification.GetString());
         }
     }
 }
