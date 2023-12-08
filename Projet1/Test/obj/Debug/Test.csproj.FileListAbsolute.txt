@@ -1,7 +1,0 @@
-D:\GitHub\Hopital\Projet1\Test\bin\Debug\Test.exe.config
-D:\GitHub\Hopital\Projet1\Test\bin\Debug\Test.exe
-D:\GitHub\Hopital\Projet1\Test\bin\Debug\Test.pdb
-D:\GitHub\Hopital\Projet1\Test\obj\Debug\Test.csprojAssemblyReference.cache
-D:\GitHub\Hopital\Projet1\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
-D:\GitHub\Hopital\Projet1\Test\obj\Debug\Test.exe
-D:\GitHub\Hopital\Projet1\Test\obj\Debug\Test.pdb
