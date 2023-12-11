@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using 
 
 namespace Gestions
 {
@@ -30,6 +31,13 @@ namespace Gestions
                 listeVisites.Clear();
             }
             h.Notif();
+        }
+        public void Clear()
+        {
+            for(int i = 0; i < listeVisites.Count; i++)
+            {
+                
+            }
         }
     }
 }

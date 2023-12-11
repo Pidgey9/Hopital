@@ -22,16 +22,16 @@ namespace Gestions
         {
             return fileAttente.Dequeue();
         }
-        //public Patients Last()
-        //{
-        //    return fileAttente[fileAttente.Count - 1];
-        //}
+        public Patients Next()
+        {
+            return fileAttente.Peek();
+        }
         public string CheckQueue()
         {
             string result = "";
-            foreach(Patients p in fileAttente)
+            foreach (Patients p in fileAttente)
             {
-                result += "x";
+                result += p.Id + "\t" + p.Nom + "\t" + p.Prenom + "\t" + p.Age + "\t" + p.Adresse + "\t" + p.Telephone + "\n";
             }
             return result;
         }

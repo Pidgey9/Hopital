@@ -14,7 +14,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            TestSelectAllA();
+            TestQ();
+        }
+        static void TestQ()
+        {
+            Hopital h = Hopital.Instance;
+            Patients p1 = new Patients(1, "a", "b", 5, "c", "d");
+            Patients p2 = new Patients(2, "a", "b", 5, "c", "d");
+
+            h.Add(p1);
+            h.Add(p2);
+            Console.WriteLine(h.CheckQueue());
         }
         static void TestDeleteA()
         {
