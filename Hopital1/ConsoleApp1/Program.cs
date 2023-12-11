@@ -68,7 +68,7 @@ namespace ConsoleApp1
         static void TestUpdateV()
         {
             DaoVisites daoP = new DaoVisites();
-            Visites p = new Visites(1, 8, "aaa", "bbb", 50, 150);
+            Visites p = new Visites(1, 8, DateTime.Now, "bbb", 50, 150);
             daoP.Update(p);
 
         }
@@ -95,7 +95,7 @@ namespace ConsoleApp1
         static void TestInsertV()
         {
             DaoVisites daoV = new DaoVisites();
-            Visites v = new Visites(1, DateTime.Now.ToString(), "aaa", 5, 25);
+            Visites v = new Visites(1, DateTime.Now, "aaa", 5, 25);
             daoV.Insert(v);
 
         }

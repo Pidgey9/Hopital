@@ -21,9 +21,12 @@ namespace Dao
 
 
             connection1.Open();
-            command.ExecuteNonQuery();
+            int nb = command.ExecuteNonQuery();
             connection1.Close();
-            return true;
+            if (nb > 0)
+                return true;
+
+            return false;
 
         }
         public bool Update(Patients p)
@@ -44,9 +47,12 @@ namespace Dao
             command.Parameters.Add("telephone", SqlDbType.NVarChar).Value = p.Telephone;
 
             connection1.Open();
-            command.ExecuteNonQuery();
+            int nb = command.ExecuteNonQuery();
             connection1.Close();
-            return true;
+            if (nb > 0)
+                return true;
+
+            return false;
 
         }
         public List<Patients> SelectAll()
@@ -111,10 +117,12 @@ namespace Dao
 
 
             connection1.Open();
-            command.ExecuteNonQuery();
+            int nb = command.ExecuteNonQuery();
             connection1.Close();
+            if (nb > 0)
+                return true;
 
-            return true;
+            return false;
         }
     }
 }

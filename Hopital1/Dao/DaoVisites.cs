@@ -53,7 +53,7 @@ namespace Dao
 
             while (reader.Read())
             {
-                Visites v = new Visites(reader.GetInt32(0), reader.GetInt32(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetInt32(5));
+                Visites v = new Visites(reader.GetInt32(0), reader.GetInt32(1), reader.GetDateTime(2), reader.GetString(3), reader.GetInt32(4), reader.GetInt32(5));
                 liste.Add(v);
 
             }
@@ -80,7 +80,7 @@ namespace Dao
 
 
             if (reader.Read())
-                v = new Visites(reader.GetInt32(0), reader.GetInt32(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetInt32(5));
+                v = new Visites(reader.GetInt32(0), reader.GetInt32(1), reader.GetDateTime(2), reader.GetString(3), reader.GetInt32(4), reader.GetInt32(5));
 
 
             connection1.Close();
@@ -93,7 +93,7 @@ namespace Dao
         {
             Visites v = null;
             string connectionString = @"Data Source=DESKTOP-F1NS20D;Initial Catalog=HOPITAL;Integrated Security=True";
-            string sql = "select * from Visites where idPatient=" + idPatient;
+            string sql = "select * from Visites where idPatient='" + idPatient + "'";
 
             SqlConnection connection1 = new SqlConnection(connectionString);
             SqlCommand command = new SqlCommand(sql, connection1);
@@ -106,7 +106,7 @@ namespace Dao
 
 
             if (reader.Read())
-                v = new Visites(reader.GetInt32(0), reader.GetInt32(1), reader.GetString(2), reader.GetString(3), reader.GetInt32(4), reader.GetInt32(5));
+                v = new Visites(reader.GetInt32(0), reader.GetInt32(1), reader.GetDateTime(2), reader.GetString(3), reader.GetInt32(4), reader.GetInt32(5));
 
 
             connection1.Close();

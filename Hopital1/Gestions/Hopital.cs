@@ -22,6 +22,10 @@ namespace Gestions
         {
             return fileAttente.Dequeue();
         }
+        //public Patients Last()
+        //{
+        //    return fileAttente[fileAttente.Count - 1];
+        //}
         public string CheckQueue()
         {
             string result = "";
@@ -43,10 +47,6 @@ namespace Gestions
                     instance = new Hopital();
                 return instance;
             }
-        }
-        public void TestStr()
-        {
-            Console.WriteLine("je teste");
         }
     }
 }

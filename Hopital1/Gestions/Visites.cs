@@ -10,11 +10,11 @@ namespace Gestions
     {
         private int id;
         private int idPatient;
-        private string date;
+        private DateTime date;
         private string medecin;
         private int numSalle;
         private int tarif;
-        public Visites(int idPatient, string date, string medecin, int numSalle, int tarif)
+        public Visites(int idPatient, DateTime date, string medecin, int numSalle, int tarif)
         {
             this.idPatient = idPatient;
             this.date = date;
@@ -22,7 +22,7 @@ namespace Gestions
             this.numSalle = numSalle;
             this.tarif = tarif;
         }
-        public Visites(int id, int idPatient, string date, string medecin, int numSalle, int tarif)
+        public Visites(int id, int idPatient, DateTime date, string medecin, int numSalle, int tarif)
         {
             this.id = id;
             this.idPatient = idPatient;
@@ -50,7 +50,7 @@ namespace Gestions
                 return idPatient;
             }
         }
-        public string Date
+        public DateTime Date
         {
             get
             {

@@ -21,9 +21,12 @@ namespace Dao
 
 
             connection1.Open();
-            command.ExecuteNonQuery();
+            int nb = command.ExecuteNonQuery();
             connection1.Close();
-            return true;
+            if (nb > 0)
+                return true;
+
+            return false;
 
         }
         public bool Update(Authentification a)
@@ -42,9 +45,12 @@ namespace Dao
             command.Parameters.Add("metier", SqlDbType.Int).Value = a.Metier;
 
             connection1.Open();
-            command.ExecuteNonQuery();
+            int nb = command.ExecuteNonQuery();
             connection1.Close();
-            return true;
+            if (nb > 0)
+                return true;
+
+            return false;
 
         }
         public List<Authentification> SelectAll()
@@ -106,10 +112,12 @@ namespace Dao
             command.Parameters.Add("metier", SqlDbType.Int).Value = a.Metier;
 
             connection1.Open();
-            command.ExecuteNonQuery();
+            int nb = command.ExecuteNonQuery();
             connection1.Close();
+            if (nb > 0)
+                return true;
 
-            return true;
+            return false;
         }
     }
 }

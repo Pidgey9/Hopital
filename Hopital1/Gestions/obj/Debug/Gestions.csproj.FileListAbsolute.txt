@@ -3,4 +3,3 @@ D:\GitHub\Hopital\Hopital1\Gestions\bin\Debug\Gestions.pdb
 D:\GitHub\Hopital\Hopital1\Gestions\obj\Debug\Gestions.csproj.CoreCompileInputs.cache
 D:\GitHub\Hopital\Hopital1\Gestions\obj\Debug\Gestions.dll
 D:\GitHub\Hopital\Hopital1\Gestions\obj\Debug\Gestions.pdb
-D:\GitHub\Hopital\Hopital1\Gestions\obj\Debug\Gestions.csprojAssemblyReference.cache
