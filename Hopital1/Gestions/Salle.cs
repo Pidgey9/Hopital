@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dao;
 
 namespace Gestions
 {
@@ -33,10 +34,12 @@ namespace Gestions
         }
         public void Clear()
         {
+            DaoVisites daoV = new DaoVisites();
             for(int i = 0; i < listeVisites.Count; i++)
             {
-                
+                daoV.Insert(listeVisites[i]);
             }
+            listeVisites.Clear();
         }
     }
 }
