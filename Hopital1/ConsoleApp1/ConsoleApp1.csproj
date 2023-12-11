@@ -52,10 +52,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dao\Dao.csproj">
-      <Project>{55dd3a3e-72a7-4796-8a5c-06ecb2a7e573}</Project>
-      <Name>Dao</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Gestions\Gestions.csproj">
       <Project>{4b5516ac-bfcd-42a7-b84d-30c4ff5e0c99}</Project>
       <Name>Gestions</Name>
