@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Gestions
 {
-    class Authentification
+    public class Authentification
     {
         private string login;
         private string password;
@@ -19,5 +19,34 @@ namespace Gestions
             this.nom = nom;
             this.metier = metier;
         }
+        public string Login
+        {
+            get
+            {
+                return login;
+            }
+        }
+        public string Password
+        {
+            get
+            {
+                return password;
+            }
+        }
+        public string Nom
+        {
+            get
+            {
+                return nom;
+            }
+        }
+        public int Metier
+        {
+            get
+            {
+                return metier;
+            }
+        }
+
     }
 }

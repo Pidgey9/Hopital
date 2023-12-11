@@ -14,7 +14,7 @@ namespace Gestions
         private string adresse;
         private string telephone;
 
-        public Patient(int id, string nom, string prenom, string adresse, string telephone)
+        public Patient(/*int id,*/ string nom, string prenom, string adresse, string telephone)
         {
             this.id = id;
             this.nom = nom;

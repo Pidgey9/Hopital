@@ -1,0 +1,9 @@
+D:\GitHub\Hopital\Hopital1\Dao\bin\Debug\Dao.dll
+D:\GitHub\Hopital\Hopital1\Dao\bin\Debug\Dao.pdb
+D:\GitHub\Hopital\Hopital1\Dao\bin\Debug\Gestions.dll
+D:\GitHub\Hopital\Hopital1\Dao\bin\Debug\Gestions.pdb
+D:\GitHub\Hopital\Hopital1\Dao\obj\Debug\Dao.csprojAssemblyReference.cache
+D:\GitHub\Hopital\Hopital1\Dao\obj\Debug\Dao.csproj.CoreCompileInputs.cache
+D:\GitHub\Hopital\Hopital1\Dao\obj\Debug\Dao.csproj.CopyComplete
+D:\GitHub\Hopital\Hopital1\Dao\obj\Debug\Dao.dll
+D:\GitHub\Hopital\Hopital1\Dao\obj\Debug\Dao.pdb

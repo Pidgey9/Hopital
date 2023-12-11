@@ -8,14 +8,14 @@ namespace Gestions
 {
     public class Salle
     {
-        private List<Visite> listeVisites = new List<Visite>();
+        private List<Visites> listeVisites = new List<Visites>();
         private Hopital h = Hopital.Instance;
         private int visitesMax = 5;
         public Salle()
         {
 
         }
-        public void Add(Visite v)
+        public void Add(Visites v)
         {
             for (int i = 0; i < listeVisites.Count + 1; i++)
             {

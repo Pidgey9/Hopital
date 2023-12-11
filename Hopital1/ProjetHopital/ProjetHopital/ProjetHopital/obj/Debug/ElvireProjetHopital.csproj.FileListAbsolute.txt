@@ -1,0 +1,10 @@
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\bin\Debug\ProjetHopital.exe.config
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\bin\Debug\ProjetHopital.exe
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\bin\Debug\ProjetHopital.pdb
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\bin\Debug\Gestions.dll
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\bin\Debug\Gestions.pdb
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\obj\Debug\ElvireProjetHopital.csprojAssemblyReference.cache
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\obj\Debug\ElvireProjetHopital.csproj.CoreCompileInputs.cache
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\obj\Debug\ElvireProjetHopital.csproj.CopyComplete
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\obj\Debug\ProjetHopital.exe
+D:\GitHub\Hopital\Hopital1\ProjetHopital\ProjetHopital\ProjetHopital\obj\Debug\ProjetHopital.pdb

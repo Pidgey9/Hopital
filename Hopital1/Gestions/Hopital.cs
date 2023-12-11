@@ -9,23 +9,23 @@ namespace Gestions
     public class Hopital
     {
         private static Hopital instance = null;
-        private Queue<Patient> fileAttente = new Queue<Patient>();
+        private Queue<Patients> fileAttente = new Queue<Patients>();
         private Hopital()
         {
 
         }
-        public void Add(Patient p)
+        public void Add(Patients p)
         {
             fileAttente.Enqueue(p);
         }
-        public Patient Remove()
+        public Patients Remove()
         {
             return fileAttente.Dequeue();
         }
         public string CheckQueue()
         {
             string result = "";
-            foreach(Patient p in fileAttente)
+            foreach(Patients p in fileAttente)
             {
                 result += "x";
             }
