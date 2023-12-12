@@ -1,0 +1,9 @@
+D:\GitHub\Hopital\ProjetHopital\TestBDD\bin\Debug\TestBDD.exe.config
+D:\GitHub\Hopital\ProjetHopital\TestBDD\bin\Debug\TestBDD.exe
+D:\GitHub\Hopital\ProjetHopital\TestBDD\bin\Debug\TestBDD.pdb
+D:\GitHub\Hopital\ProjetHopital\TestBDD\bin\Debug\Gestions.dll
+D:\GitHub\Hopital\ProjetHopital\TestBDD\bin\Debug\Gestions.pdb
+D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.csproj.CoreCompileInputs.cache
+D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.csproj.CopyComplete
+D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.exe
+D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.pdb
