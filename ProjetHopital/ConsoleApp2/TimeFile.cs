@@ -12,7 +12,7 @@ namespace ConsoleApp2
     {
         public void File(Patients p)
         {
-            string path = @"D:\GitHub\Hopital\fichiersPatients.txt";
+            string path = @"D:\GitHub\Hopital\ProjetHopital\fichiersPatients.txt";
             try
             {
                 StreamReader sr = new StreamReader(path);
