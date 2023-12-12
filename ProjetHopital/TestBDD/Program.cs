@@ -12,7 +12,18 @@ namespace TestBDD
     {
         static void Main(string[] args)
         {
-            TestInsertA();
+            TestL();
+        }
+        static void TestL()
+        {
+            Salle salle = new Salle();
+            Console.WriteLine(salle.listeVisites.Count);
+            Console.WriteLine(salle.listeVisites.Capacity);
+            salle.listeVisites.Add(new Visites(1, DateTime.Now, "a", 1, 1));
+            Console.WriteLine(salle.listeVisites.Count);
+            Console.WriteLine(salle.listeVisites.Capacity);
+            Console.WriteLine(salle.listeVisites[0]);
+
         }
         static void TestQ()
         {

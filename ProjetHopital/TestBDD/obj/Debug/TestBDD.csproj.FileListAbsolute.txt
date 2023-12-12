@@ -7,3 +7,4 @@ D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.csproj.CoreCompileInpu
 D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.csproj.CopyComplete
 D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.exe
 D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.pdb
+D:\GitHub\Hopital\ProjetHopital\TestBDD\obj\Debug\TestBDD.csprojAssemblyReference.cache

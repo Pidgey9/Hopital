@@ -133,7 +133,9 @@ namespace ConsoleApp2
 
                     case 3:
                         // Logique pour Afficher le prochain patient de la liste d'attente"
-                        Console.WriteLine("le prochain patient est " + " \n" + hopital.Next());
+                        Console.WriteLine("le prochain patient est : ");
+                        Patients pat = hopital.Next();
+                        Console.WriteLine(pat.Id + "\t" + pat.Nom + "\t" + pat.Prenom + "\t" + pat.Age + "\t" + pat.Adresse + "\t" + pat.Telephone);
                         // il faut traiter la partie ou la file d attente est vide
                         break;
 
@@ -184,7 +186,7 @@ namespace ConsoleApp2
 
         static void afficherMenuMedecin(Hopital hopital)
         {
-            Salle salle = new Salle();
+            Salle salle1 = new Salle();
             int choixSec;
             do
             {
@@ -204,21 +206,27 @@ namespace ConsoleApp2
 
                     case 1:
                         // Logique pour Rendre la salle dispo
-
-                        if (salle.IsDispo)
+                        try
                         {
+                            if (salle1.IsDispo)
+                            {
 
 
-                            Patients p = hopital.Next();
-                            Visites v1 = new Visites(p.Id, DateTime.Now, p.Nom, 1, 50);
-                            salle.Add(v1);
+                                Patients p = hopital.Next();
+                                Visites v1 = new Visites(p.Id, DateTime.Now, p.Nom, 1, 50);
+                                salle1.Add(v1);
 
-                            Console.WriteLine("la salle est dispo");
+                                Console.WriteLine("la salle est dispo");
+                            }
+                            else
+                            {
+                                Console.WriteLine("la salle est occupee");
+                            }
+
                         }
-                        else
+                        catch
                         {
-                            Console.WriteLine("la salle est occupee");
-
+                            Console.WriteLine("Pas de patients en attente.");
                         }
 
 
@@ -226,23 +234,19 @@ namespace ConsoleApp2
 
                     case 2:
                         // Logique pour  afficher la file d attente
-                        Console.WriteLine("l'etat de la liste d'attente " + " \n" + hopital.CheckQueue());
+                        Console.WriteLine("l'etat de la liste d'attente : " + " \n" + hopital.CheckQueue());
 
 
                         break;
 
                     case 3:// Logique pour sauvegarder les visites
-
-
-                        salle.Clear();
+                        salle1.Clear();
                         Console.WriteLine("la liste des visites est sauvegardee  ");
 
                         break;
                     case 4:
                         // Logique pour afficher la liste des visites"
-                        //List<Visites> visite = DaoVisites.SelectAll();
-                        //foreach (Visites vi in visite)
-                        //    Console.WriteLine(vi.Id + "\t" + vi.IdPatient + "\t" + vi.Date + "\t" + vi.Medecin + "\t" + vi.NumSalle + "\t" + vi.Tarif);
+                        Console.WriteLine(salle1.CheckList());
 
                         break;
 
