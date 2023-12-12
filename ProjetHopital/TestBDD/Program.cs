@@ -12,17 +12,17 @@ namespace TestBDD
     {
         static void Main(string[] args)
         {
-            TestL();
+            TestInsertA();
         }
         static void TestL()
         {
-            Salle salle = new Salle();
-            Console.WriteLine(salle.listeVisites.Count);
-            Console.WriteLine(salle.listeVisites.Capacity);
-            salle.listeVisites.Add(new Visites(1, DateTime.Now, "a", 1, 1));
-            Console.WriteLine(salle.listeVisites.Count);
-            Console.WriteLine(salle.listeVisites.Capacity);
-            Console.WriteLine(salle.listeVisites[0]);
+            //Salle salle = new Salle();
+            //Console.WriteLine(salle.listeVisites.Count);
+            //Console.WriteLine(salle.listeVisites.Capacity);
+            //salle.listeVisites.Add(new Visites(1, DateTime.Now, "a", 1, 1));
+            //Console.WriteLine(salle.listeVisites.Count);
+            //Console.WriteLine(salle.listeVisites.Capacity);
+            //Console.WriteLine(salle.listeVisites[0]);
 
         }
         static void TestQ()
@@ -72,7 +72,7 @@ namespace TestBDD
         static void TestInsertA()
         {
             DaoAuthentification daoV = new DaoAuthentification();
-            Authentification a = new Authentification("m", "b", "c", 1);
+            Authentification a = new Authentification("n", "b", "c", 2);
             daoV.Insert(a);
 
         }

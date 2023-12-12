@@ -49,10 +49,10 @@ namespace ConsoleApp2
                         break;
 
                     case 1:
-                        afficherMenuMedecin(hopital);
+                        afficherMenuMedecin1(hopital);
                         break;
                     case 2:
-                        Console.WriteLine("Menu pour médecin");
+                        afficherMenuMedecin2(hopital);
                         break;
                     default:
                         Console.WriteLine("Métier inconnu");
@@ -101,6 +101,8 @@ namespace ConsoleApp2
                         if (patient != null)
                         {
                             hopital.Add(patient);
+
+
                             Console.WriteLine("Le patient avec l'ID " + id + " est ajoute a la file d'attente");
 
                         }
@@ -121,6 +123,8 @@ namespace ConsoleApp2
                             daoP.Insert(p);
                             Console.WriteLine("Le patient " + id + " vient d'être insérer dans la base de donnée.");
                             hopital.Add(p);
+
+
                             Console.WriteLine("le patient avec l'ID " + id + " est ajoute a la file d'attente");
 
                         }
@@ -184,9 +188,9 @@ namespace ConsoleApp2
 
         }
 
-        static void afficherMenuMedecin(Hopital hopital)
+        static void afficherMenuMedecin1(Hopital hopital)
         {
-            Salle salle1 = new Salle();
+            Salle salle1 = new Salle(1, "Dr Jacob", 50);
             int choixSec;
             do
             {
@@ -213,7 +217,7 @@ namespace ConsoleApp2
 
 
                                 Patients p = hopital.Next();
-                                Visites v1 = new Visites(p.Id, DateTime.Now, p.Nom, 1, 50);
+                                Visites v1 = new Visites(p.Id, DateTime.Now, p.Nom, salle1.Num, salle1.Tarif);
                                 salle1.Add(v1);
 
                                 Console.WriteLine("la salle est dispo");
@@ -267,6 +271,88 @@ namespace ConsoleApp2
 
 
 
+
+        }
+        static void afficherMenuMedecin2(Hopital hopital)
+        {
+            Salle salle2 = new Salle(2, "Dr Zukzuk", 150);
+            int choixSec;
+            do
+            {
+                Console.WriteLine("---------------------Menu Médecin Salle 2-----------------------");
+
+                Console.WriteLine("1. Rendre la salle dispo");
+                Console.WriteLine("2. afficher la file d attente");
+                Console.WriteLine("3. sauvegarder les visites");
+                Console.WriteLine("4. afficher la liste des visites");
+
+                Console.WriteLine("5. Quitter l'interface medecin et revenir au menu principal");
+
+                Console.Write("Entrez votre choix : ");
+                choixSec = Convert.ToInt32(Console.ReadLine());
+                switch (choixSec)
+                {
+
+                    case 1:
+                        // Logique pour Rendre la salle dispo
+                        try
+                        {
+                            if (salle2.IsDispo)
+                            {
+
+
+                                Patients p = hopital.Next();
+                                Visites v1 = new Visites(p.Id, DateTime.Now, p.Nom, salle2.Num, salle2.Tarif);
+                                salle2.Add(v1);
+
+                                Console.WriteLine("la salle est dispo");
+                            }
+                            else
+                            {
+                                Console.WriteLine("la salle est occupee");
+                            }
+
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Pas de patients en attente.");
+                        }
+
+
+                        break;
+
+                    case 2:
+                        // Logique pour  afficher la file d attente
+                        Console.WriteLine("l'etat de la liste d'attente : " + " \n" + hopital.CheckQueue());
+
+
+                        break;
+
+                    case 3:// Logique pour sauvegarder les visites
+                        salle2.Clear();
+                        Console.WriteLine("la liste des visites est sauvegardee  ");
+
+                        break;
+                    case 4:
+                        // Logique pour afficher la liste des visites"
+                        Console.WriteLine(salle2.CheckList());
+
+                        break;
+
+                    case 5:
+                        // Logique pour Quitter l'interface medecin et revenir au menu principal"
+                        Console.WriteLine("Retour au menu principal.");
+                        TestAuthentification();
+
+                        break;
+
+                    default:
+                        Console.WriteLine("Option invalide. Veuillez choisir à nouveau.");
+                        break;
+                }
+
+
+            } while (choixSec != 5);
 
         }
 

@@ -16,25 +16,19 @@ namespace Gestions
         private string medecin;
         private int tarif;
         private bool isDispo = true;
-        public Salle()
+        public Salle(int num, string medecin, int tarif)
         {
-
+            this.num = num;
+            this.medecin = medecin;
+            this.tarif = tarif;
         }
         public void Add(Visites v)
         {
-            //for (int i = 0; i < listeVisites.Count; i++)
-            //{
-            //    if (listeVisites[i] == null)
-            //    {
-            //        listeVisites.Add(v);
-            //        break;
-            //    }
-            //}
-            listeVisites.Add(v);
             if (listeVisites.Count >= listeVisites.Capacity)
             {
                 listeVisites.Clear();
             }
+            listeVisites.Add(v);
             h.Notif();
         }
         public void Clear()
@@ -63,5 +57,27 @@ namespace Gestions
                 return isDispo;
             }
         }
+        public int Num
+        {
+            get
+            {
+                return num;
+            }
+        }
+        public string Medecin
+        {
+            get
+            {
+                return medecin;
+            }
+        }
+        public int Tarif
+        {
+            get
+            {
+                return tarif;
+            }
+        }
+
     }
 }
