@@ -102,6 +102,7 @@ namespace ConsoleApp2
                         {
                             hopital.Add(patient);
 
+                            new TimeFile().File(patient);
 
                             Console.WriteLine("Le patient avec l'ID " + id + " est ajoute a la file d'attente");
 
@@ -124,6 +125,7 @@ namespace ConsoleApp2
                             Console.WriteLine("Le patient " + id + " vient d'être insérer dans la base de donnée.");
                             hopital.Add(p);
 
+                            new TimeFile().File(p);
 
                             Console.WriteLine("le patient avec l'ID " + id + " est ajoute a la file d'attente");
 
@@ -181,7 +183,7 @@ namespace ConsoleApp2
                 }
 
 
-            } while (choixSec != 5);
+            } while (choixSec != 6);
 
 
 
@@ -267,7 +269,7 @@ namespace ConsoleApp2
                 }
 
 
-            } while (choixSec != 5);
+            } while (choixSec != 6);
 
 
 
@@ -352,7 +354,7 @@ namespace ConsoleApp2
                 }
 
 
-            } while (choixSec != 5);
+            } while (choixSec != 6);
 
         }
 
