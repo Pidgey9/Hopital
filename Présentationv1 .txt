@@ -1,0 +1,11 @@
+Présentation :
+5.
+library public class -> chat-gpt
+stackoverflowexception : getters
+num-salle en numSalle -> obliger de passer outre le cahier des charges
+streamreader et streamwriter sur la doc microsoft
+circular dependencies -> stack overflow
+
+6.
+Trop de temps à passer à faire la correction.
+Echec au niveau mentor ou manque de te temps pour instruire à mieux coder soit pour utiliser une librairie ou sur le code tout court.
